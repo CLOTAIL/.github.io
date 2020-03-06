@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{MSc Finance & Big Data - Data visualization 2020.title}}</title>
+
+  
+  <!-- link to main stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+<!-- body -->
+<body>
+
+  <!-- header -->
+  <section class="hero is-info is-bold">
+    <!-- todo: change assignment and name -->
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Financial Market Analysis
+        </h1>
+        <h2 class="subtitle">
+          Clovis CLOTAIL
+        </h2>
+      </div>
+    </div>
+
+    <!-- change navigation if needed -->
+    <div class="hero-foot">
+      <div class="container">
+      
+      {{ content }}
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#top">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+              <span>Home</span>
+            </a>
+          </div>
+
+          <div id="main-navbar" class="navbar-menu">
+            <a class="navbar-item" href="#viz1">
+              <span class="icon">
+                <i class="fas fa-chart-area"></i>
+              </span>
+              <span>Visualizations</span>
+            </a>
+          </div>
+
+          <div class="navbar-end">
+            <a class="navbar-item" href="#about">
+              <span class="icon">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <span>About</span>
+            </a>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content">
+      <!-- modify if necessary (move visualizations in separate pages) -->
+      <h2 id="viz1">Visualization 1</h2>
+
+      
+	  
+      <img src= "https://raw.githubusercontent.com/mscfinance-big-data-viz/Indiv_Project_CLOTAIL/master/Evolution%20march%C3%A9s.png"
+	  
+	  
+	  </img>
+	  
+	  <h3>Interpretation 1</h3>
+
+      <p>
+       In the visualization 1 we can see the evolution of the USA and European stocks index equities after the 2007 Financial Market Crisis.
+	   In this case we can notify that the financial Markets took more than 10 years to rebound after the Financial Crisis.
+	   The Index stocks are the nasdaq ( the technologic US Market), Dow Jones (The famous US stocks index),
+	   Cac 40 (The 40th best stocks capitalisation in France),
+	   Dax(The German Index), FTSE( The English index).
+	   We can also notify that the different financial markets are sharing the same trend. For exemple in 2017 the markets has grow significantly ,
+	   We can suppose that there is a correlation between these stocks index.This assumption could be true for the local markets (the US index between them and European Finance Markets index.
+	   We will analyze this hypothesis in the visualization 2.
+      </p>
+
+	  
+      <h2 id="viz1">Visualization 2</h2>
+
+      
+	  
+      <img src= "https://raw.githubusercontent.com/mscfinance-big-data-viz/Indiv_Project_CLOTAIL/master/corr%C3%A9lation%20march%C3%A9.png"
+	  
+	  
+	  </img>
+
+      <h3>Interpretation 2</h3>
+	  
+		<p>
+		In this case We can see the correlation between the differents index.
+		We can see obeviously that the US Index are not significantly correlated to the European Index and they reacted in an opposite ways in the same time.
+		I think we need to test this assumption with index which most similar (in the contruction of the index) as possible. In the 10 last years ( refer to the visualization 1),
+		we can see that all the Index Stocks evolves in the same at the same time. For exemple when Donald Trump has announced the commercial war,
+		all of the Stocks Index around world has significantly fell. Can we assume that there is a correlation between all the financial market around the world or 
+		can we assume that "All the financial markets are correlated to the news?" or may be the both.
+		For understand this phenomenon i think to test these assumptions.
+		</p>
+
+      <h3>Discussion </h3>
+		
+		The difficulties of this project: 
+		<ul>
+		
+		<li>To take the good informations that you need to show.</li>
+		<p>
+		</p>
+		
+			In data visualization you need to select the good data for sharing the information that you really want to show.
+			For this project i tried almost three websites to find the period that i needed and the data in "xls,xlsx or csv".
+			Some websites provide these information in the txt. format ( really complecated to manage this kind of data for me).
+			With more reflexion i think i had to use the data the provides by the yahoo finance website as we've seen in course.
+			
+		<p>
+		</p>
+		
+		<li>Traiting the Data : use the good packages</li>
+		<p>
+		</p>
+		
+			For a good visualization of your data you need to know which plot packages to use.
+		
+		
+		<p>
+		</p>
+		
+		<li>Merge different Data : find the good axis and be sure you have the same common dates for examples(for having a long historical dataset)</li>
+		<p>
+		
+		For a good data analysis you need to have a large data set period,
+		if you want to compare different data set between them you have to merge them on the good dates and verify that the events you want to show and comment must be in the common period.
+		In this case the scale of the differents index is not the same, if you want to plot them in the same graph the results cool be aweful. If you have too much informations to show it could be worse.
+		
+		</p>
+		<li>Plot the Data : my biggest problematic i spent more than 3 days to try to plot how i want my data.
+		<p>
+			I decided to show the most importants informations that i wanted to share.</li>
+			I wanted to share in the same graph the financial index and some stocks price it's very complicated. I think if i had use the "Yahoo financial data",
+			I'll be able to "merge" those type of information with the "seaborn" package. My stocks or index should be a variable( a row in the data set , not a column)
+		</p>
+		
+		<p>
+			Exemple : 
+		</p>
+		<p>
+		<img src= "https://raw.githubusercontent.com/mscfinance-big-data-viz/Indiv_Project_CLOTAIL/master/corr.png"
+	  
+	  
+	  </img>
+			
+		</p>
+		
+		</ul>
+		
+		
+		
+      <p>
+      
+      </p>
+
+      <h3>Sources</h3>
+
+      <p>
+        For this project i had downloaded the dataset from <a href= "https://fr.investing.com/indices/nasdaq-composite-historical-data."> Investing.com </a>
+		I used some simple code and the must knowed packages like Pandas , CSV and Matplolib.
+      </p>
+    </div>
+  </section>
+
+  <hr class="container">
+
+  <!-- about section -->
+  <!-- fill in, or link to a personal web page  -->
+  <section class="section">
+    <div class="container content">
+      <h2 id="about">
+        About Me
+      </h2>
+
+      <div class="media">
+        <div class="media-left">
+          <p class="image is-128x128">
+            <!-- replace with your profile image -->
+            <img src="https://raw.githubusercontent.com/CLOTAIL/Neoma_Course/master/Photo%202.jpg">
+          </p>
+        </div>
+
+        <div class="media-content">
+            <p>
+              <!-- replace with your information -->
+              <strong>Clovis CLOTAIL</strong>
+              <br/>
+			  <h2> <strong> Interests </strong> </h2>
+			  <ul>
+			  
+              <li>Quantitative Multi assets strategy (Assets Management), Econometrics, Derivatives Equities, Programation(VBA, Python, HTML)</li>
+			  <li>Martial Arts ( Taekwondo)</li>
+			  
+			  </ul>
+			  
+              <br/>
+              <!-- find brand icons at: https://fontawesome.com/icons?d=gallery&s=brands&m=free -->
+              <a href="https://github.com/CLOTAIL">
+                <span class="fab fa-github"></span>
+                <span>Github</span>
+              </a>
+              &bullet;
+              <a href="https://www.linkedin.com/in/clovis-clotail-8988b6148">
+                <span class="fab fa-linkedin"></span>
+                <span>LinkedIn</span>
+              </a>
+            </p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <small>
+        <a href="#top">
+          <span class="fas fa-arrow-up"></span>
+          <span>Back to Top</span>
+        </a>
+        <br/>
+        <a href="https://www.neoma-bs.fr/formations/masteres-specialises-masters-of-science-temps-partiel/msc-in-finance-and-big-data/presentation-du-programme">MSc Finance & Big Data / Data visualization</a>
+        &bullet;
+        <a href="https://https://www.neoma-bs.fr/">Neoma Business School</a>
+      </small>
+    </div>
+  </footer>
+
+</body>
+</html>
