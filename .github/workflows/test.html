@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MSc Finance & Big Data - Data visualization 2020</title>
+
+  <!-- bulma and font awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" crossorigin="anonymous">
+</head>
+
+<!-- body -->
+<body>
+
+  <!-- header -->
+  <section class="hero is-info is-bold">
+    <!-- todo: change assignment and name -->
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Financial Market Analysis
+        </h1>
+        <h2 class="subtitle">
+          Clovis CLOTAIL
+        </h2>
+      </div>
+    </div>
+
+    <!-- change navigation if needed -->
+    <div class="hero-foot">
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#top">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+              <span>Home</span>
+            </a>
+          </div>
+
+          <div id="main-navbar" class="navbar-menu">
+            <a class="navbar-item" href="#viz1">
+              <span class="icon">
+                <i class="fas fa-chart-area"></i>
+              </span>
+              <span>Visualizations</span>
+            </a>
+          </div>
+
+          <div class="navbar-end">
+            <a class="navbar-item" href="#about">
+              <span class="icon">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <span>About</span>
+            </a>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content">
+      <!-- modify if necessary (move visualizations in separate pages) -->
+      
+      <h2 id="viz1">Visualization</h2>
+      
+      <h3>Interpretation</h3>
+	  
+		<p>
+		In this case we can see the gender wage gap (in%)  in the OECD's countries.
+		This OECD's study explains that women are lower-paid than men because they have much more difficulties to progress in their jobs.
+		This difficulty can be explain by the fact that most part of women are spending much than men with their children.
+		Marternity leave and half part time jobs are also justify this gap.
+		</p>
+		
+		<p>
+		This study of course takes into account poeple with the same graduation, age group, jobs and experiences to have a good comparison between the both gender.
+		<li>For the OECD's contries the mean gap is almost 13%</li>
+		<li>The minimum gap is in Costa Rica : 0.0% in 2010 and 2013</li>
+		<li>The maximum gap is in Japan almost 34% in 2000</li>
+		
+		
+		</p>
+
+      <h3>Discussion </h3>
+		
+		The difficulties of this project: 
+		<ul>
+		
+		<li>Ploting as i wanted my data with the scatter_geo</li>
+		I needed the international ID of the countries of my data frame. I found thoses 3 caracters ID on the Internet because they are using in many programming languages.
+		With a pandas package merge i was able to plot the data with the scatter_geo.
+		
+		<p>
+		<li>Found the all the data</li>
+		For example for many countries in this data frame there were missing data i had to waiting for a data update by the OECD.
+		
+		</p>
+		
+		<p>
+		<li>Export the HTML code of the plot</li>
+		I tried for almost 1 week to use javascript for generate a HTML page for this project but it was complicated to find the good way that i wanted to show my plot.
+		I found on the internet a code which help me to export my plot in a HTML page :
+		"fig.write_html(r'C:\Users\Taepoong972\Documents\Neoma Curses\Second Quarter\Data Visualization\Last_assignment\Viz.html')"			
+		The scrip has been generate and then i was able to integrate my plot in the HTML project.
+		I want to underlying that i spend almost 3 days to find a way to export my plot. I think with a better background with deep HTML coding
+		and Javascript it would be easier.
+		
+		</ul>
+		
+		
+		
+      <p>
+      
+      </p>
+
+      <h3>Sources</h3>
+	
+		
+      <p>
+	  For this project i used the study and the data provide by the OECD website:
+        <li><a href= "http://www.oecd.org/gender/data/wide-gap-in-pension-benefits-between-men-and-women.htm"> The study </a></li>
+		<li><a href= "https://stats.oecd.org/Index.aspx?lang=en&SubSessionId=94245c85-80e4-4c6e-84b0-7ad1a1136334&themetreeid=21"> The Data </a></li>
+		
+      </p>
+    </div>
+  </section>
+
+  <hr class="container">
+
+  <!-- about section -->
+  <!-- fill in, or link to a personal web page  -->
+  <section class="section">
+    <div class="container content">
+      <h2 id="about">
+        About Me
+      </h2>
+
+      <div class="media">
+        <div class="media-left">
+          <p class="image is-128x128">
+            <!-- replace with your profile image -->
+            <img src="https://raw.githubusercontent.com/CLOTAIL/Neoma_Course/master/Photo%202.jpg">
+          </p>
+        </div>
+
+        <div class="media-content">
+            <p>
+              <!-- replace with your information -->
+              <strong>Clovis CLOTAIL</strong>
+              <br/>
+			  <h2> <strong> Interests </strong> </h2>
+			  <ul>
+			  
+              <li>Quantitative Multi assets strategy (Assets Management), Econometrics, Derivatives Equities, Programation(VBA, Python, HTML)</li>
+			  <li>Martial Arts ( Taekwondo)</li>
+			  
+			  </ul>
+			  
+              <br/>
+              <!-- find brand icons at: https://fontawesome.com/icons?d=gallery&s=brands&m=free -->
+              <a href="https://github.com/CLOTAIL">
+                <span class="fab fa-github"></span>
+                <span>Github</span>
+              </a>
+              &bullet;
+              <a href="https://www.linkedin.com/in/clovis-clotail-8988b6148">
+                <span class="fab fa-linkedin"></span>
+                <span>LinkedIn</span>
+              </a>
+            </p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <small>
+        <a href="#top">
+          <span class="fas fa-arrow-up"></span>
+          <span>Back to Top</span>
+        </a>
+        <br/>
+        <a href="https://www.neoma-bs.fr/formations/masteres-specialises-masters-of-science-temps-partiel/msc-in-finance-and-big-data/presentation-du-programme">MSc Finance & Big Data / Data visualization</a>
+        &bullet;
+        <a href="https://https://www.neoma-bs.fr/">Neoma Business School</a>
+      </small>
+    </div>
+  </footer>
+
+</body>
+</html>
